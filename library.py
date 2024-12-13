@@ -1,13 +1,9 @@
-import sys
 from PyQt6.QtWidgets import (
-    QMainWindow, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem,
-    QLineEdit, QFormLayout, QDialog, QLabel, QSpinBox, QComboBox, QHBoxLayout, QMessageBox, QWidget
-)
+    QMainWindow, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QDialog, QMessageBox, QWidget)
 from database_manager import DatabaseManager
 import sqlite3
 from book_details import BookDetailsDialog
 from book_dialog import BookDialog
-from PyQt6.QtCore import Qt
 
 
 class LibraryManagementSystem(QMainWindow):

@@ -1,9 +1,4 @@
-import sys
-from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem,
-    QLineEdit, QFormLayout, QDialog, QLabel, QSpinBox, QComboBox, QHBoxLayout, QMessageBox, QWidget
-)
-from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QPushButton, QLineEdit, QFormLayout, QDialog, QSpinBox, QComboBox, QHBoxLayout)
 
 
 class BookDialog(QDialog):
@@ -57,4 +52,3 @@ class BookDialog(QDialog):
             self.genre_input.currentText(),
             self.year_input.value(),
         )
-

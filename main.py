@@ -13,19 +13,3 @@ if __name__ == "__main__":
     window = LibraryManagementSystem()
     window.show()
     sys.exit(app.exec())
-
-# if __name__ == "__main__":
-#     import sys
-#     from PyQt6.QtWidgets import QApplication
-#
-#     app = QApplication(sys.argv)
-#
-#     dialog = BookDetailsDialog()
-#     result = dialog.exec()
-#     print("Dialog result:", result)
-#
-#     if result == QDialog.DialogCode.Accepted:
-#         print("Dialog was accepted")
-#         print("Book details:", dialog.get_book_details())
-#     else:
-#         print("Dialog was canceled.")

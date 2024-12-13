@@ -1,7 +1,6 @@
 import sys
 from PyQt6.QtWidgets import (
-    QApplication, QDialog
-)
+    QApplication)
 from library import LibraryManagementSystem
 
 

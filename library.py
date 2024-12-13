@@ -1,5 +1,6 @@
 from PyQt6.QtWidgets import (
-    QMainWindow, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QDialog, QMessageBox, QWidget)
+    QMainWindow, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QDialog, QMessageBox, QWidget,
+    QHeaderView)
 from database_manager import DatabaseManager
 import sqlite3
 from book_details import BookDetailsDialog
@@ -29,6 +30,9 @@ class LibraryManagementSystem(QMainWindow):
         self.table = QTableWidget()
         self.table.setColumnCount(6)
         self.table.setHorizontalHeaderLabels(["ID", "Title", "Author", "ISBN", "Genre", "Year"])
+        # Make the horizontal header fill the entire space
+        header = self.table.horizontalHeader()
+        header.setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.layout.addWidget(self.table)
 
         # Buttons

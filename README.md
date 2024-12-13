@@ -11,6 +11,7 @@ A desktop application for managing library books built using PyQt6 for the user 
 | View Books   | Display all books in a table with search and filter functionality.           |
 | Update Books | Modify details of existing books.                                            |
 | Delete Books | Remove books from the database.                                              |
+| Search Books | Find books based on title, author, ISBN, genre, and publication year         |
 
 ### 2.	Database:
 1. Powered by SQLite.
